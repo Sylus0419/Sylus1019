@@ -2238,5 +2238,10 @@
     <script src="storage-expand.js" defer></script>
     <script src="dream-write.js" defer></script>
     <script src="notification-enhance.js" defer></script> 
+    <script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js');
+}
+</script>
 </body>
 </html>
